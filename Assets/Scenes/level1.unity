@@ -2771,8 +2771,8 @@ MonoBehaviour:
   rightAccel: 5
   onGround: 1
   doubleJumped: 0
-  acceleration: 15
-  maxSpeed: 12
+  acceleration: 4
+  maxSpeed: 6
   friction: 0.9
   mainCamera: {fileID: 56522712}
   teleportPosition: {x: 57.8, y: 15}
@@ -4817,9 +4817,9 @@ MonoBehaviour:
   player: {fileID: 673300807}
   cameraTransform: {fileID: 56522713}
   rotationSpeed: 180
-  rollInterval: 5
+  rollInterval: 10
   minInterval: 1
-  rollTimer: 5
+  rollTimer: 10
 --- !u!114 &1406395631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5294,7 +5294,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 80f344501a882a74e979e44e18fece4e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 7349243ffcfb35548a0de641d554f8d4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
