@@ -235,6 +235,9 @@ public class PlayerController : MonoBehaviour
         return input;
     }
 
+    //-----------------------------COMMENTING OUT CODE SO PLAYER CONTROLS DON'T SWITCH WITH GRAVITY SHIFTS---------------------------
+    // ----------------------------------------BEGIN FUCKING WITH CODE-------------------------------
+/*
     private void directionUpdate()
     {
         switch (direction)
@@ -266,13 +269,14 @@ public class PlayerController : MonoBehaviour
         rightKey = newRight;
         return;
     }
-
+*/
+//------------------------------------------------END FUCKING WITH CODE-------------------------------------
     public void checkForDirectionChange()
     {
-        if(direction != oldDirection)
+        if (direction != oldDirection)
         {
             oldDirection = direction;
-            directionUpdate();
+            //directionUpdate(); ----------------------------REMOVED SO PLAYER CONTROLS DON'T SWITCH
         }
     }
 
@@ -303,7 +307,7 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             gravityRotator.RotateGravity(0);
             direction = 0;
-            directionUpdate();
+            //directionUpdate(); ----------------------------REMOVED SO PLAYER CONTROLS DON'T SWITCH
             transform.position = teleportPosition;
         }
     }
